@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass{article}
+\documentclass[10.5pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -73,7 +73,7 @@
 
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-0.5pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -146,7 +146,7 @@
     % \faGlobe \hspace{.5pt} \href{Link to Portfolio}{Portfolio}
     $|$
     % TODO: Add google maps location
-    \faMapMarker \hspace{.5pt} \href{a} {Pittsburgh, Pennsylvania}
+    \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/nDiixFmLt41dn9vq9} {Pittsburgh, Pennsylvania}
 \end{flushleft}
 
 
@@ -167,9 +167,8 @@
    
 %   \resumeSubHeadingListEnd
 \section{Education}
-  \vspace*{1pt}
+  \vspace{-0.5pt}
     \resumeSubHeadingListStart
-  
     \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh \textbf{-} Pennsylvania}
       {M.S. Mobile and IoT Engineering}{May 2022 \textbf{--} Dec 2023}
@@ -179,28 +178,36 @@
     
     \resumeSubheading
       {Vellore Institute of Technology}{Vellore \textbf{-} Tamil Nadu}
-      {BTech. Electronics and Communication Engineering with specialisation in IoT and Sensors}{July 2016 \textbf{--} June 2020}
+      {BTech. Electronics and Communication Engineering with specialization in IoT and Sensors}{July 2016 \textbf{--} June 2020}
         \resumeItemListStart
-            \resumeItem{CGPA - 9.1/10.0}
+            \resumeItem{GPA - 9.1/10.0}
             \resumeItem{Coursework in Electronics, Software Engineering and Machine Learning}
             \resumeItem{Part of maker space at VIT called Creation Labs}
         \resumeItemListEnd
     \resumeSubHeadingListEnd
-
 %----------- WORK EXPERIENCE -----------
 % TODO: Complete
 \section{Work Experience}
   \vspace{1pt}
   \resumeSubHeadingListStart
-    \resumeSubheading
+  \resumeSubheading
       {BlackRock}{Gurugram, India}
       {Software Engineer I}{Jan 2020 \textbf{--} July 2022}
         \resumeItemListStart
-            \resumeItem{Worked as a Data Engineer to create data-lake called RBOR(Regulatory Book of Records) }
+            \resumeItem{Developed a datalake called RBOR(Regulatory Book of Records) }
             \resumeItem{Enabled users to onboard ingestion of data via configs. Lead to increased adoption of RBOR}
-            \resumeItem{Schema Management and evolution of datasets so that a consistent view of datasets is maintained}
-            \resumeItem{Peak Performance: Security Data - ingestion of 600GB/week with 293 columns (100M rows) in total with multiple evolutions to schema. Reduced query time as compared to Sybase from $\sim{~}$60 mins to 1 min for batch queries}  
+            \resumeItem{Developed a schema management and automatic ingestion platform}
+            \resumeItem{Preminent example is of security data: ingests \textbf{600GB/week with 293 columns (100M rows)} with continuous iteration and QA. Platform reduced query time as compared to Sybase from \textbf{$\sim{~}$60 mins to 1 min} for batch queries}  
+        \resumeItemListEnd 
+ 
+      \resumeSubheading
+        {Mantra Labs}{Banglore, India}
+        {Software Engineering Intern}{Jan 2020 \textbf{--} July 2022}
+          \resumeItemListStart
+              \resumeItem{Interfaced I2S protocol with BeagleBoneBlock for a solid state microphone}
+              \resumeItem{Also created a facial recognition system to recognize unknown faces in security cameras using FaceNet.}
           \resumeItemListEnd 
+ 
   \resumeSubHeadingListEnd
 
 
@@ -213,19 +220,17 @@
       {ITC}{ Vellore Institute of Technology  \textbf{-} Vellore}
       {Student Researcher}{May 2019 \textbf{--}  July 2019}
         \resumeItemListStart
-            \resumeItem{Part of team which developed a machine to detect defects in incense sticks}
-            \resumeItem{Trained a Convolutional Neural network in combination an image processing pipeline for object detection and classification, achieving an accuracy of 82\symbol{\%} }
-            \resumeItem{Optimized speed of the machine to process 5 sticks per second by using an event driver inference system}
+            \resumeItem{Developed a machine to detect defects in incense sticks}
+            \resumeItem{Trained a CNN in combination an image processing pipeline for object detection and classification, achieving an accuracy of \textbf{82\symbol{\%}} and achieved a throughput for \textbf{five sticks per second} }
             \resumeItem{Filed for a patent under Vellore Institute of Technology for the prototype}
             \resumeItemListEnd
     \resumeSubheading
       {Creation Labs - Team AutoZ}{Vellore Institute of Technology \textbf{-} Vellore}
       {Student Researcher}{Sept 2018 \textbf{--}  Nov 2019}
         \resumeItemListStart
-            \resumeItem{Part of team which developed an autonomous mobile robot to compete in IGVC competition}
-            \resumeItem{Project was sponsored by DRDO for research and development into mine detection and avoidance}
-            \resumeItem{Mobile robot was built on top of the ROS platform}
-            \resumeItem{I was responsible for the developement of the sensor localisation and electrical drive subsystem}
+            \resumeItem{Developed an autonomous mobile robot to compete in IGVC competition}
+            \resumeItem{Project was later funded by DRDO for research and development into mine detection and avoidance}
+            \resumeItem{I was responsible for the development of the sensor localization and electrical drive subsystem}
           \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -241,25 +246,25 @@
       \resumeProjectHeading
         {\textbf{Dynamic Memory Allocator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Achieved a peak performance of 74\symbol{\%} utilization while maintaining a throughput of $\sim{~}$9000Kops }
+            \resumeItem{Implementation achieved a peak performance of \textbf{74\symbol{\%}} utilization while maintaining a throughput of \textbf{$\sim{~}$9000Kops} }
           \resumeItemListEnd
 
        \resumeProjectHeading
        {\textbf{Tiny Shell} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Implemented a shell using unix signal handling and unix processes}
+            \resumeItem{Implemented a shell using Unix signal handling and Unix processes}
             \resumeItem{Implemented background processes, foreground processes and job control similar to bash}
           \resumeItemListEnd
         
         
       \resumeProjectHeading            
-        {\textbf{LRU Cache similator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
+        {\textbf{LRU Cache simulator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Implemented a cache simulator which evaluates the hits and missed based on the memory acces traces.}
+            \resumeItem{Implemented a cache simulator which evaluates the hits and missed based on the memory access traces.}
           \resumeItemListEnd
   
       \resumeProjectHeading       
-        {\textbf{Contributer -  Vega} $|$ \emph{\href{https://github.com/rajasekarv/vega}{\color{blue}GitHub}}}{}
+        {\textbf{Contributor -  Vega} $|$ \emph{\href{https://github.com/rajasekarv/vega}{\color{blue}GitHub}}}{}
           \resumeItemListStart
             \resumeItem{Implemented distributed set subtract operation}
           \resumeItemListEnd
@@ -288,7 +293,7 @@
   \resumeSubHeadingListStart
     \small{\item{
         \textbf{Programming:}{ C, C++, Java, Python, MATLAB, SQL, VHDL, Rust, Scala} \\ \vspace{2pt}
-        \textbf{Technologies:}{ Git, Arduino, ROS, LaTex, Spark, Tensorflow, Pytorch, Hadoop, Linux} \\ \vspace{2pt}
+        \textbf{Technologies:}{ Git, Arduino, ROS, LaTex, Spark, TensorFlow, PyTorch, Hadoop, Linux} \\ \vspace{2pt}
         \textbf{Languages:}{ English (Professional), Hindi (Native), Marathi }
     }}
   \resumeSubHeadingListEnd

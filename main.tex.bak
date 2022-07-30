@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -73,7 +73,7 @@
 
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-4pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -122,7 +122,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -142,7 +142,7 @@
     \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/ajinkyaprabhu/}{ajinkyaprabhu}
     $|$
     \faGithub \hspace{.5pt} \href{https://github.com/ajprabhu09}{ajprabhu09}
-    $|$
+    % $|$
     % \faGlobe \hspace{.5pt} \href{Link to Portfolio}{Portfolio}
     $|$
     % TODO: Add google maps location
@@ -171,75 +171,114 @@
     \resumeSubHeadingListStart
   
     \resumeSubheading
-      {Some Place}{Location \textbf{-}Place}
-      {Position}{Jun 2022 \textbf{--} Aug 2022}
+      {Carnegie Mellon University}{Pittsburgh \textbf{-} Pennsylvania}
+      {M.S. Mobile and IoT Engineering}{May 2022 \textbf{--} Dec 2023}
         \resumeItemListStart
-            \resumeItem{Detail 1}
-            \resumeItem{Detail 2}
+            \resumeItem{Intro to Computer Systems - 15513}
         \resumeItemListEnd
     
-    \resumeSubHeadingListEnd
-
-
-%----------- RESEARCH EXPERIENCE -----------
-% % TODO: Complete
-\section{Research Experience}
-  \vspace{0pt}
-  \resumeSubHeadingListStart
     \resumeSubheading
-      {ITC}{ Vellore Institute of Technology  \textbf{-} Vellore}
-      {Student Researcher}{May 2019 \textbf{--}  July 2019}
+      {Vellore Institute of Technology}{Vellore \textbf{-} Tamil Nadu}
+      {BTech. Electronics and Communication Engineering with specialisation in IoT and Sensors}{July 2016 \textbf{--} June 2020}
         \resumeItemListStart
-            \resumeItem{Part of team which developed a high aspect ratio defect detection machine}
-            \resumeItem{Trained a Convolutional Neural network combined with a handcoded computer vision algorithm for masking the AOI while achieving an accuracy of 82\symbol{\%} }
-            \resumeItem{}
-
-          \resumeItemListEnd
-  \resumeSubHeadingListEnd
+            \resumeItem{CGPA - 9.1/10.0}
+            \resumeItem{Coursework in Electronics, Software Engineering and Machine Learning}
+            \resumeItem{Part of maker space at VIT called Creation Labs}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 %----------- WORK EXPERIENCE -----------
 % TODO: Complete
 \section{Work Experience}
   \vspace{1pt}
   \resumeSubHeadingListStart
-    
     \resumeSubheading
       {BlackRock}{Gurugram, India}
       {Software Engineer I}{Jan 2020 \textbf{--} July 2022}
         \resumeItemListStart
-            \resumeItem{Worked as a Data Engineer to create datalake called RBOR(Regulatory Book of Records) }
+            \resumeItem{Worked as a Data Engineer to create data-lake called RBOR(Regulatory Book of Records) }
             \resumeItem{Enabled users to onboard ingestion of data via configs. Lead to increased adoption of RBOR}
-            \resumeItem{Schema Management and evolution of datasets so that a consitent view of datasets is maintained}
+            \resumeItem{Schema Management and evolution of datasets so that a consistent view of datasets is maintained}
             \resumeItem{Peak Performance: Security Data - ingestion of 600GB/week with 293 columns (100M rows) in total with multiple evolutions to schema. Reduced query time as compared to Sybase from $\sim{~}$60 mins to 1 min for batch queries}  
           \resumeItemListEnd 
   \resumeSubHeadingListEnd
 
 
+%----------- RESEARCH EXPERIENCE -----------
+% % TODO: Complete
+\section{Research Experience}
+  % \vspace{0pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ITC}{ Vellore Institute of Technology  \textbf{-} Vellore}
+      {Student Researcher}{May 2019 \textbf{--}  July 2019}
+        \resumeItemListStart
+            \resumeItem{Part of team which developed a machine to detect defects in incense sticks}
+            \resumeItem{Trained a Convolutional Neural network in combination an image processing pipeline for object detection and classification, achieving an accuracy of 82\symbol{\%} }
+            \resumeItem{Optimized speed of the machine to process 5 sticks per second by using an event driver inference system}
+            \resumeItem{Filed for a patent under Vellore Institute of Technology for the prototype}
+            \resumeItemListEnd
+    \resumeSubheading
+      {Creation Labs - Team AutoZ}{Vellore Institute of Technology \textbf{-} Vellore}
+      {Student Researcher}{Sept 2018 \textbf{--}  Nov 2019}
+        \resumeItemListStart
+            \resumeItem{Part of team which developed an autonomous mobile robot to compete in IGVC competition}
+            \resumeItem{Project was sponsored by DRDO for research and development into mine detection and avoidance}
+            \resumeItem{Mobile robot was built on top of the ROS platform}
+            \resumeItem{I was responsible for the developement of the sensor localisation and electrical drive subsystem}
+          \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
 
 %----------- AWARDS & ACHIEVEMENTS -----------
 % TODO: Complete
-\section{Awards \& Achievements}
-  \vspace{1pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{Merit Scholarship:}{ Awarded merit Scholarship for exceptional academic performance for 3 consecutive years} \\ \vspace{3pt}
-        }}
-  \resumeSubHeadingListEnd
-
 
 
 %----------- PROJECTS -----------
 % TODO: Complete
 \section{Projects}
-    
     \resumeSubHeadingListStart
       \resumeProjectHeading
-        {\textbf{Dynamic Memory Allocator} $|$ \emph{\href{NONE}{\color{blue}GitHub}}}{}
+        {\textbf{Dynamic Memory Allocator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Detail 1}
-            \resumeItem{Detail 2}
+            \resumeItem{Achieved a peak performance of 74\symbol{\%} utilization while maintaining a throughput of $\sim{~}$9000Kops }
           \resumeItemListEnd
-     
+
+       \resumeProjectHeading
+       {\textbf{Tiny Shell} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented a shell using unix signal handling and unix processes}
+            \resumeItem{Implemented background processes, foreground processes and job control similar to bash}
+          \resumeItemListEnd
+        
+        
+      \resumeProjectHeading            
+        {\textbf{LRU Cache similator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented a cache simulator which evaluates the hits and missed based on the memory acces traces.}
+          \resumeItemListEnd
+  
+      \resumeProjectHeading       
+        {\textbf{Contributer -  Vega} $|$ \emph{\href{https://github.com/rajasekarv/vega}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented distributed set subtract operation}
+          \resumeItemListEnd
+  
+      % \resumeProjectHeading
+      %   {\textbf{Toy Symbolic differentiation} $|$ \emph{\href{https://github.com/ajprabhu09/uselessautograd}{\color{blue}GitHub}}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{A toy implementation of automatic differentiation using symbols as objects and operator overloading}
+      %     \resumeItemListEnd
+
+
+        
+        % \resumeProjectHeading
+        %  {\textbf{Automatic Image Captioning}}{}
+        %   \resumeItemListStart
+        %     \resumeItem{Implemented distributed set subtract operation}
+        %   \resumeItemListEnd
+
+
     \resumeSubHeadingListEnd
 
 %----------- SKILLS -----------
@@ -248,17 +287,30 @@
   \vspace{1pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming:}{ C, C++, Java, Python, MATLAB, R, MySQL, VHDL} \\ \vspace{2pt}
-        
-        \textbf{Technologies:}{ Git, Arduino, ROS} \\ \vspace{2pt}
-        
-        \textbf{Languages:}{English (Professional), Hindi (Native), Marathi }
-        
-        % \textbf{Frameworks}{: X, X, X} \\
-        % \textbf{Developer Tools}{: X, X, X} \\
-        % \textbf{Libraries}{: X, X, X} \\
-        % \textbf{Applications}{: X, X, X}
+        \textbf{Programming:}{ C, C++, Java, Python, MATLAB, SQL, VHDL, Rust, Scala} \\ \vspace{2pt}
+        \textbf{Technologies:}{ Git, Arduino, ROS, LaTex, Spark, Tensorflow, Pytorch, Hadoop, Linux} \\ \vspace{2pt}
+        \textbf{Languages:}{ English (Professional), Hindi (Native), Marathi }
     }}
+  \resumeSubHeadingListEnd
+
+
+  \section{Publications \& Patents}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Publication:}{ Image Compression and Reconstruction Using Encoder-Decoder Convolutional Neural Network - Prabhu A., Chowdhary S., Narayanan S.J., Perumal B. \\ \vspace{3pt}}
+        \textbf{Patent:}{ A scanning device for inspecting and sorting high aspect ratio objects and method thereof - N202041047428} \\ \vspace{3pt}
+      }}
+  \resumeSubHeadingListEnd
+
+
+
+\section{Awards \& Achievements}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Merit Scholarship:}{ Awarded merit Scholarship for exceptional academic performance for 2 consecutive years} \\ \vspace{3pt}
+        }}
   \resumeSubHeadingListEnd
 
 

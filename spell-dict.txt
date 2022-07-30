@@ -1,19 +1,32 @@
-personal_ws-1.1 en 23 
+personal_ws-1.1 en 36 
 AOI
 Ajinkya
 Allocator
+AutoZ
+BTech
 BlackRock
+Chowdhary
 Convolutional
+DRDO
 Gurugram
+IGVC
 ISE
 ITC
+IoT
+Kops
+LRU
 LTspice
+LaTex
+Nadu
+Narayanan
+Perumal
 Prabhu
 RBOR
 ROS
 Simulink
 Sybase
 VHDL
+VIT
 Vellore
 Xilinx
 ajinkyaprabhu
