@@ -16,3 +16,10 @@
 *.pdf
 *.gz
 .aspell*
+*.4tc 
+*.dvi
+*.tmp
+*.xref
+# texidote isntall ignore
+
+*.deb*

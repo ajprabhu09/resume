@@ -53,9 +53,10 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -72,7 +73,7 @@
 
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-4pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -87,7 +88,7 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-
+% Use if multiple majors
 \newcommand{\resumeEducationHeading}[6]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -131,8 +132,8 @@
 
 %---------- HEADING ----------
 
-\begin{center}
-    \textbf{\Huge \scshape Ajinkya Prabhu} \\ \vspace{3pt}
+\begin{flushleft}
+    \textbf{\large \scshape Ajinkya Prabhu} \\ \vspace{2 pt}
     \small
     \faMobile \hspace{.5pt} \href{tel:919790555473}{+91 9790555473}
     $|$
@@ -144,106 +145,114 @@
     $|$
     % \faGlobe \hspace{.5pt} \href{Link to Portfolio}{Portfolio}
     $|$
-    \faMapMarker \hspace{.5pt} \href{}{Pittsburgh, Pensylvania}
-\end{center}
+    % TODO: Add google maps location
+    \faMapMarker \hspace{.5pt} \href{a} {Pittsburgh, Pennsylvania}
+\end{flushleft}
+
 
 
 
 %----------- EDUCATION -----------
-
-\section{Education}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
+% TODO: Complete
+% \section{Education}
+%   \resumeSubHeadingListStart
     
-    \resumeEducationHeading{asdasd}{2}{3}{4}{5}{6}
-      \resumeItemListStart
-        \resumeItem{Hello}
-        \resumeItem{By}
-      \resumeItemListEnd
-    \resumeEducationHeading{asdasd}{2}{3}{4}{5}{6}
-
-    \resumeEducationHeading{asdasd}{2}{3}{4}{5}{6}
+%    \resumeSubheading
+%       {Some Place}{Location \textbf{-}Place}
+%       {Position}{Jun 2022 \textbf{--} Aug 2022}
+%         \resumeItemListStart
+%             \resumeItem{Detail 1}
+%             \resumeItem{Detail 2}
+%         \resumeItemListEnd
    
-  \resumeSubHeadingListEnd
-
-
-
-%----------- RESEARCH EXPERIENCE -----------
-
-\section{Research Experience}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
+%   \resumeSubHeadingListEnd
+\section{Education}
+  \vspace*{1pt}
+    \resumeSubHeadingListStart
   
     \resumeSubheading
       {Some Place}{Location \textbf{-}Place}
       {Position}{Jun 2022 \textbf{--} Aug 2022}
         \resumeItemListStart
-            \resumeItem{Currently working in the Physical Intelligence Department with Sinan Özgün Demir on a project about 3D magnetic printing and heat-assisted magnetic programming of soft millirobots.}
-            \resumeItem{Updated a ROS package for converting 3D motion controller events to ROS messages so that it synchronously operates at any given loop rate.}
+            \resumeItem{Detail 1}
+            \resumeItem{Detail 2}
         \resumeItemListEnd
     
-   
+    \resumeSubHeadingListEnd
+
+
+%----------- RESEARCH EXPERIENCE -----------
+% % TODO: Complete
+\section{Research Experience}
+  \vspace{0pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ITC}{ Vellore Institute of Technology  \textbf{-} Vellore}
+      {Student Researcher}{May 2019 \textbf{--}  July 2019}
+        \resumeItemListStart
+            \resumeItem{Part of team which developed a high aspect ratio defect detection machine}
+            \resumeItem{Trained a Convolutional Neural network combined with a handcoded computer vision algorithm for masking the AOI while achieving an accuracy of 82\symbol{\%} }
+            \resumeItem{}
+
+          \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-
-
 %----------- WORK EXPERIENCE -----------
-
+% TODO: Complete
 \section{Work Experience}
-  \vspace{3pt}
+  \vspace{1pt}
   \resumeSubHeadingListStart
     
     \resumeSubheading
       {BlackRock}{Gurugram, India}
-      {Intern}{Jan 2020 \textbf{--} June 2020}
+      {Software Engineer I}{Jan 2020 \textbf{--} July 2022}
         \resumeItemListStart
-            \resumeItem{Descrption}
-        \resumeItemListEnd
-    
+            \resumeItem{Worked as a Data Engineer to create datalake called RBOR(Regulatory Book of Records) }
+            \resumeItem{Enabled users to onboard ingestion of data via configs. Lead to increased adoption of RBOR}
+            \resumeItem{Schema Management and evolution of datasets so that a consitent view of datasets is maintained}
+            \resumeItem{Peak Performance: Security Data - ingestion of 600GB/week with 293 columns (100M rows) in total with multiple evolutions to schema. Reduced query time as compared to Sybase from $\sim{~}$60 mins to 1 min for batch queries}  
+          \resumeItemListEnd 
   \resumeSubHeadingListEnd
 
 
 
 %----------- AWARDS & ACHIEVEMENTS -----------
-
+% TODO: Complete
 \section{Awards \& Achievements}
-  \vspace{3pt}
+  \vspace{1pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Merit Scholarship:}{ Awarded merit Scholarship for exceptional academic performance for 3 consective years} \\ \vspace{3pt}
+        \textbf{Merit Scholarship:}{ Awarded merit Scholarship for exceptional academic performance for 3 consecutive years} \\ \vspace{3pt}
         }}
   \resumeSubHeadingListEnd
 
 
 
 %----------- PROJECTS -----------
-
+% TODO: Complete
 \section{Projects}
     
     \resumeSubHeadingListStart
-      
       \resumeProjectHeading
         {\textbf{Dynamic Memory Allocator} $|$ \emph{\href{NONE}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{A C project which implements a variety of image processing operations that manipulate the size, filter, brightness, contrast, saturation, and other properties of PPM images from scratch.}
-            \resumeItem{Added recursive fractal generation functions to model popular fractals including Mandelbrot set, Julia set, Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
+            \resumeItem{Detail 1}
+            \resumeItem{Detail 2}
           \resumeItemListEnd
      
     \resumeSubHeadingListEnd
 
-
-
 %----------- SKILLS -----------
-
+% TODO: Modify based on job app
 \section{Skills}
   \vspace{1pt}
   \resumeSubHeadingListStart
     \small{\item{
         \textbf{Programming:}{ C, C++, Java, Python, MATLAB, R, MySQL, VHDL} \\ \vspace{2pt}
         
-        \textbf{Technologies:}{ Git, Arduino, ROS, Simulink, LTspice, Xilinx ISE} \\ \vspace{2pt}
+        \textbf{Technologies:}{ Git, Arduino, ROS} \\ \vspace{2pt}
         
-        \textbf{Languages:}{ Turkish (Native), English (Professional), German (Elementary)}
+        \textbf{Languages:}{English (Professional), Hindi (Native), Marathi }
         
         % \textbf{Frameworks}{: X, X, X} \\
         % \textbf{Developer Tools}{: X, X, X} \\
