@@ -70,7 +70,8 @@
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1}
-  } \vspace{-2pt}
+  } 
+  \vspace{-3pt}
 }
 
 
@@ -103,10 +104,10 @@
 
 \newcommand{\resumeProjectHeading}[2]{
 
-    \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \small#1 & \small#2 \\ 
-    \end{tabular*} \vspace{-3pt}
+    \end{tabular*}
 }
 
 
@@ -138,7 +139,7 @@
 \begin{flushleft}
     \textbf{\Large Ajinkya Prabhu} \\ \vspace{2 pt}
     \small
-    \faMobile \hspace{.5pt} \href{tel:919790555473}{(+91) 979-055-5473}
+    \faMobile \hspace{.5pt} \href{tel:+919790555473}{979-055-5473}
     $|$
     \small
     \faAt \hspace{.5pt} \href{mailto:amprabhu@andrew.cmu.edu}{amprabhu@andrew.cmu.edu}
@@ -187,8 +188,7 @@
         \resumeItemListStart
             \resumeItem{GPA - 9.1/10.0}
             \resumeItem{specialization in IoT and Sensors}
-            \resumeItem{Member of maker space called Creation Labs}
-        \resumeItemListEnd
+        \resumeItemListEnd 
     \resumeSubHeadingListEnd
     \vspace{0pt}
 %----------- WORK EXPERIENCE -----------
@@ -199,20 +199,18 @@
       {BlackRock}{Gurugram, India}
       {Software Engineer I}{Jan 2020 \textbf{--} July 2022}
         \resumeItemListStart
-            \resumeItem{Developed a datalake called RBOR(Regulatory Book of Records) }
-            \resumeItem{Enabled users to onboard ingestion of data via configs. Lead to increased adoption of RBOR}
-            \resumeItem{Developed a schema management and automatic ingestion platform}
-            \resumeItem{Preminent example is of security data: ingests \textbf{600GB/week with 293 columns (100M rows)} with continuous iteration and QA. Platform reduced query time as compared to Sybase from \textbf{$\sim{~}$60 mins to 1 min} for batch queries}  
+            \resumeItem{Collaborated with a team of five software engineers to develop a data lake called RBOR (Regulatory Book of Records) with schema management and automatic ingestion on the Cloudera Data Platform}
+            \resumeItem{Increased the adoption of the RBOR platform across BlackRock}
+            \resumeItem{Spearheaded ingestion of securities data which brings in \textbf{600GB/week with 293 columns (100M rows)}}
+            \resumeItem{Boosted query performance by \textbf{60 times}}  
         \resumeItemListEnd 
- 
       \resumeSubheading
-        {Mantra Labs}{Banglore, India}
+        {Mantra Labs}{Bangalore, India}
         {Software Engineering Intern}{Jan 2020 \textbf{--} July 2022}
           \resumeItemListStart
-              \resumeItem{Interfaced I2S protocol with BeagleBoneBlock for a solid state microphone}
-              \resumeItem{Also created a facial recognition system to recognize unknown faces in security cameras using FaceNet}
+              \resumeItem{Analyzed the I2S protocol in its application to a solid-state microphone on the BeagleBone Black}
+              \resumeItem{Devised a facial recognition system to recognize unknown faces in security cameras using FaceNet algorithm}
           \resumeItemListEnd 
- 
     \resumeSubHeadingListEnd
     \vspace{0pt}
 
@@ -224,18 +222,18 @@
       {ITC}{ Vellore Institute of Technology  \textbf{-} Vellore}
       {Student Researcher}{May 2019 \textbf{--}  July 2019}
         \resumeItemListStart
-            \resumeItem{Developed a machine to detect defects in incense sticks}
-            \resumeItem{Trained a CNN in combination an image processing pipeline for object detection and classification, achieving an accuracy of \textbf{82\symbol{\%}} and achieved a throughput for \textbf{five sticks per second} }
-            \resumeItem{Filed for a patent under Vellore Institute of Technology for the prototype}
+            \resumeItem{Collaborated with a team of 5 students to develop a prototype that detects defects in incense sticks}
+            \resumeItem{Developed a Convolutional Neural Network in tandem with an image processing pipeline for object detection and classification}
+            \resumeItem{Achieved an accuracy of \textbf{82\symbol{\%}} while maintaining throughput of \textbf{five sticks per second}}
             \resumeItemListEnd
     \resumeSubheading
       {Creation Labs - Team AutoZ}{Vellore Institute of Technology \textbf{-} Vellore}
       {Student Researcher}{Sept 2018 \textbf{--}  Nov 2019}
         \resumeItemListStart
-            \resumeItem{Developed an autonomous mobile robot to compete in IGVC competition}
-            \resumeItem{Project was later funded by DRDO for research and development into mine detection and avoidance}
-            \resumeItem{I was responsible for the development of the sensor localization and electrical drive subsystem}
-          \resumeItemListEnd
+            \resumeItem{Collaborated with a team of 10 students to develop an autonomous mobile robot to compete in IGVC competition}
+            \resumeItem{Led the development of the sensor localization and electrical driver subsystem}
+            \resumeItem{Successfully secured funding from DRDO for defense research during tenure as vice-captain}
+            \resumeItemListEnd
   \resumeSubHeadingListEnd
     \vspace{0pt}
 
@@ -250,26 +248,26 @@
     \resumeSubHeadingListStart
       \resumeProjectHeading{\textbf{Dynamic Memory Allocator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Implementation achieved a peak performance of \textbf{74\symbol{\%}} utilization while maintaining a throughput of \textbf{$\sim{~}$9000Kops} }
+            \resumeItem{Developed a malloc package implementation that achieved a peak performance of \textbf{74\symbol{\%}} utilization while maintaining a throughput of \textbf{$\sim{~}$9000Kops} }
           \resumeItemListEnd
 
        \resumeProjectHeading
        {\textbf{Tiny Shell} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Implemented background processes, foreground processes and job control similar to bash}
+            \resumeItem{Implemented a shell application using UNIX fork and signal handling}
           \resumeItemListEnd
         
         
       \resumeProjectHeading            
-        {\textbf{LRU Cache simulator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
+        {\textbf{HTTP Proxy} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Implemented a cache simulator which evaluates the hits and missed based on the memory access traces}
+            \resumeItem{Designed a concurrent web proxy with thread-safe caching between concurrent requests}
           \resumeItemListEnd
   
       \resumeProjectHeading       
         {\textbf{Contributor -  Vega} $|$ \emph{\href{https://github.com/rajasekarv/vega}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Implemented distributed set subtract operation}
+            \resumeItem{Developed the distributed set subtract operation in Rust}
           \resumeItemListEnd
   
       % \resumeProjectHeading
@@ -290,12 +288,12 @@
     \resumeSubHeadingListEnd
     \vspace{0pt}
 %----------- SKILLS -----------
-% TODO: Modify based on job app
+% TODO: Modify based on the job app
 \section{Skills}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming:}{ C, C++, Java, Python, MATLAB, SQL, VHDL, Rust, Scala} \\
-        \textbf{Technologies:}{ Git, Arduino, ROS, LaTex, Spark, TensorFlow, PyTorch, Hadoop, Linux} \\
+        \textbf{Programming Languages:}{ C, C++, Java, Python, MATLAB, SQL, VHDL, Rust, Scala} \\
+        \textbf{Technologies:}{ Git, Arduino, ROS, LaTeX, Spark, TensorFlow, PyTorch, Hadoop, Linux} \\
         \textbf{Languages:}{ English (Professional), Hindi (Native), Marathi }
     }}
     % \vspace{-4pt}

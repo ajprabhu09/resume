@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass{article}
+\documentclass[12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -19,6 +19,8 @@
 \usepackage{tabularx}
 \usepackage{hyphenat}
 \usepackage{fontawesome}
+\usepackage{bold-extra}
+\usepackage{setspace}
 \input{glyphtounicode}
 
 
@@ -54,10 +56,10 @@
 \setlength{\tabcolsep}{0in}
 
 
-% Sections formatting
+% Sections formatting Small everywhere
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-10pt}\scshape\bfseries\raggedright\small
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -67,17 +69,18 @@
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
-  }
+    {#1}
+  } 
+  \vspace{-3pt}
 }
 
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{\small#1} & \small#2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}
 }
 
 
@@ -85,14 +88,14 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}
 }
 
 % Use if multiple majors
 \newcommand{\resumeEducationHeading}[6]{
-  \vspace{-2pt}\item
+      \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & \small#2 \\
       \textit{\small#3} & \textit{\small #4} \\
       \textit{\small#5} & \textit{\small #6} \\
     \end{tabular*}\vspace{-5pt}
@@ -100,10 +103,11 @@
 
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \small#2 \\ 
+    \end{tabular*}
 }
 
 
@@ -115,38 +119,41 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{10pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-8pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\setstretch{0.75}
 \begin{document}
 
 %---------- HEADING ----------
 
 \begin{flushleft}
-    \textbf{\large \scshape Ajinkya Prabhu} \\ \vspace{2 pt}
+    \textbf{\Large Ajinkya Prabhu} \\ \vspace{2 pt}
     \small
-    \faMobile \hspace{.5pt} \href{tel:919790555473}{+91 9790555473}
+    \faMobile \hspace{.5pt} \href{tel:+919790555473}{979-055-5473}
     $|$
+    \small
     \faAt \hspace{.5pt} \href{mailto:amprabhu@andrew.cmu.edu}{amprabhu@andrew.cmu.edu}
     $|$
+    \small
     \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/ajinkyaprabhu/}{ajinkyaprabhu}
     $|$
+    \small
     \faGithub \hspace{.5pt} \href{https://github.com/ajprabhu09}{ajprabhu09}
     % $|$
     % \faGlobe \hspace{.5pt} \href{Link to Portfolio}{Portfolio}
-    $|$
-    % TODO: Add google maps location
-    \faMapMarker \hspace{.5pt} \href{a} {Pittsburgh, Pennsylvania}
+    % $|$
+    % % TODO: Add google maps location
+    % \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/nDiixFmLt41dn9vq9} {Pittsburgh, Pennsylvania}
 \end{flushleft}
 
 
@@ -167,68 +174,68 @@
    
 %   \resumeSubHeadingListEnd
 \section{Education}
-  \vspace*{1pt}
     \resumeSubHeadingListStart
-  
     \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh \textbf{-} Pennsylvania}
-      {M.S. Mobile and IoT Engineering}{May 2022 \textbf{--} Dec 2023}
+      {Masters in Mobile and IoT Engineering}{May 2022 \textbf{--} Dec 2023}
         \resumeItemListStart
             \resumeItem{Intro to Computer Systems - 15513}
         \resumeItemListEnd
     
     \resumeSubheading
       {Vellore Institute of Technology}{Vellore \textbf{-} Tamil Nadu}
-      {BTech. Electronics and Communication Engineering with specialisation in IoT and Sensors}{July 2016 \textbf{--} June 2020}
+      {Bachelors in Electronics and Communication Engineering}{July 2016 \textbf{--} June 2020}
         \resumeItemListStart
-            \resumeItem{CGPA - 9.1/10.0}
-            \resumeItem{Coursework in Electronics, Software Engineering and Machine Learning}
-            \resumeItem{Part of maker space at VIT called Creation Labs}
-        \resumeItemListEnd
+            \resumeItem{GPA - 9.1/10.0}
+            \resumeItem{specialization in IoT and Sensors}
+        \resumeItemListEnd 
     \resumeSubHeadingListEnd
-
+    \vspace{0pt}
 %----------- WORK EXPERIENCE -----------
 % TODO: Complete
 \section{Work Experience}
-  \vspace{1pt}
   \resumeSubHeadingListStart
-    \resumeSubheading
+  \resumeSubheading
       {BlackRock}{Gurugram, India}
       {Software Engineer I}{Jan 2020 \textbf{--} July 2022}
         \resumeItemListStart
-            \resumeItem{Worked as a Data Engineer to create data-lake called RBOR(Regulatory Book of Records) }
-            \resumeItem{Enabled users to onboard ingestion of data via configs. Lead to increased adoption of RBOR}
-            \resumeItem{Schema Management and evolution of datasets so that a consistent view of datasets is maintained}
-            \resumeItem{Peak Performance: Security Data - ingestion of 600GB/week with 293 columns (100M rows) in total with multiple evolutions to schema. Reduced query time as compared to Sybase from $\sim{~}$60 mins to 1 min for batch queries}  
+            \resumeItem{Collaborated with a team of five software engineers to develop a data lake called RBOR (Regulatory Book of Records) with schema management and automatic ingestion on the Cloudera Data Platform}
+            \resumeItem{Increased the adoption of the RBOR platform across BlackRock}
+            \resumeItem{Spearheaded ingestion of securities data which brings in \textbf{600GB/week with 293 columns (100M rows)}}
+            \resumeItem{Boosted query performance by \textbf{60 times}}  
+        \resumeItemListEnd 
+      \resumeSubheading
+        {Mantra Labs}{Banglore, India}
+        {Software Engineering Intern}{Jan 2020 \textbf{--} July 2022}
+          \resumeItemListStart
+              \resumeItem{Analysed the I2S protocol in its application to a solid-state microphone on the BeagleBone Black}
+              \resumeItem{Devised a facial recognition system to recognize unknown faces in security cameras using FaceNet algorithm}
           \resumeItemListEnd 
-  \resumeSubHeadingListEnd
-
+    \resumeSubHeadingListEnd
+    \vspace{0pt}
 
 %----------- RESEARCH EXPERIENCE -----------
 % % TODO: Complete
 \section{Research Experience}
-  % \vspace{0pt}
   \resumeSubHeadingListStart
     \resumeSubheading
       {ITC}{ Vellore Institute of Technology  \textbf{-} Vellore}
       {Student Researcher}{May 2019 \textbf{--}  July 2019}
         \resumeItemListStart
-            \resumeItem{Part of team which developed a machine to detect defects in incense sticks}
-            \resumeItem{Trained a Convolutional Neural network in combination an image processing pipeline for object detection and classification, achieving an accuracy of 82\symbol{\%} }
-            \resumeItem{Optimized speed of the machine to process 5 sticks per second by using an event driver inference system}
-            \resumeItem{Filed for a patent under Vellore Institute of Technology for the prototype}
+            \resumeItem{Collaborated with a team of 5 students to develop a prototype which detects defects in incense sticks}
+            \resumeItem{Developed a Convolutional Neural Network in tandem with an image processing pipeline for object detection and classification}
+            \resumeItem{Achieved an accuracy of \textbf{82\symbol{\%}} while maintaining throughput of \textbf{five sticks per second}}
             \resumeItemListEnd
     \resumeSubheading
       {Creation Labs - Team AutoZ}{Vellore Institute of Technology \textbf{-} Vellore}
       {Student Researcher}{Sept 2018 \textbf{--}  Nov 2019}
         \resumeItemListStart
-            \resumeItem{Part of team which developed an autonomous mobile robot to compete in IGVC competition}
-            \resumeItem{Project was sponsored by DRDO for research and development into mine detection and avoidance}
-            \resumeItem{Mobile robot was built on top of the ROS platform}
-            \resumeItem{I was responsible for the developement of the sensor localisation and electrical drive subsystem}
-          \resumeItemListEnd
+            \resumeItem{Collaborated with a team of 10 students to develop an autonomous mobile robot to compete in IGVC competition}
+            \resumeItem{Led the development of the sensor localization and electrical driver subsystem}
+            \resumeItem{Successfully secured funding from DRDO for defense research during tenure as vice-captain}
+            \resumeItemListEnd
   \resumeSubHeadingListEnd
-
+    \vspace{0pt}
 
 %----------- AWARDS & ACHIEVEMENTS -----------
 % TODO: Complete
@@ -237,31 +244,30 @@
 %----------- PROJECTS -----------
 % TODO: Complete
 \section{Projects}
+  \vspace{1pt}
     \resumeSubHeadingListStart
-      \resumeProjectHeading
-        {\textbf{Dynamic Memory Allocator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
+      \resumeProjectHeading{\textbf{Dynamic Memory Allocator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Achieved a peak performance of 74\symbol{\%} utilization while maintaining a throughput of $\sim{~}$9000Kops }
+            \resumeItem{Developed a malloc package implementation that achieved a peak performance of \textbf{74\symbol{\%}} utilization while maintaining a throughput of \textbf{$\sim{~}$9000Kops} }
           \resumeItemListEnd
 
        \resumeProjectHeading
        {\textbf{Tiny Shell} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Implemented a shell using unix signal handling and unix processes}
-            \resumeItem{Implemented background processes, foreground processes and job control similar to bash}
+            \resumeItem{Implemented a shell application using UNIX fork and signal handelling}
           \resumeItemListEnd
         
         
       \resumeProjectHeading            
-        {\textbf{LRU Cache similator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
+        {\textbf{HTTP Proxy} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Implemented a cache simulator which evaluates the hits and missed based on the memory acces traces.}
+            \resumeItem{Designed a concurrent web proxy with threadsafe caching between concurrent requests}
           \resumeItemListEnd
   
       \resumeProjectHeading       
-        {\textbf{Contributer -  Vega} $|$ \emph{\href{https://github.com/rajasekarv/vega}{\color{blue}GitHub}}}{}
+        {\textbf{Contributor -  Vega} $|$ \emph{\href{https://github.com/rajasekarv/vega}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Implemented distributed set subtract operation}
+            \resumeItem{Developed the distributed set subtract operation in Rust}
           \resumeItemListEnd
   
       % \resumeProjectHeading
@@ -280,36 +286,34 @@
 
 
     \resumeSubHeadingListEnd
-
+    \vspace{0pt}
 %----------- SKILLS -----------
 % TODO: Modify based on job app
 \section{Skills}
-  \vspace{1pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming:}{ C, C++, Java, Python, MATLAB, SQL, VHDL, Rust, Scala} \\ \vspace{2pt}
-        \textbf{Technologies:}{ Git, Arduino, ROS, LaTex, Spark, Tensorflow, Pytorch, Hadoop, Linux} \\ \vspace{2pt}
+        \textbf{Programming Languages:}{ C, C++, Java, Python, MATLAB, SQL, VHDL, Rust, Scala} \\
+        \textbf{Technologies:}{ Git, Arduino, ROS, LaTeX, Spark, TensorFlow, PyTorch, Hadoop, Linux} \\
         \textbf{Languages:}{ English (Professional), Hindi (Native), Marathi }
     }}
+    % \vspace{-4pt}
   \resumeSubHeadingListEnd
 
 
   \section{Publications \& Patents}
-  \vspace{1pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Publication:}{ Image Compression and Reconstruction Using Encoder-Decoder Convolutional Neural Network - Prabhu A., Chowdhary S., Narayanan S.J., Perumal B. \\ \vspace{3pt}}
-        \textbf{Patent:}{ A scanning device for inspecting and sorting high aspect ratio objects and method thereof - N202041047428} \\ \vspace{3pt}
+        \textbf{Publication:}{ Image Compression and Reconstruction Using Encoder-Decoder Convolutional Neural Network - Prabhu A., Chowdhary S., Narayanan S.J., Perumal B.} \\ 
+        \textbf{Patent:}{ A scanning device for inspecting and sorting high aspect ratio objects and method thereof - N202041047428} 
       }}
   \resumeSubHeadingListEnd
 
 
 
 \section{Awards \& Achievements}
-  \vspace{1pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Merit Scholarship:}{ Awarded merit Scholarship for exceptional academic performance for 2 consecutive years} \\ \vspace{3pt}
+        \textbf{Merit Scholarship:}{ Awarded merit Scholarship for exceptional academic performance for 2 consecutive years} \\ 
         }}
   \resumeSubHeadingListEnd
 

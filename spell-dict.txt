@@ -1,13 +1,16 @@
-personal_ws-1.1 en 36 
+personal_ws-1.1 en 41 
 AOI
 Ajinkya
 Allocator
 AutoZ
 BTech
+BeagleBone
 BlackRock
 Chowdhary
+Cloudera
 Convolutional
 DRDO
+FaceNet
 Gurugram
 IGVC
 ISE
@@ -16,6 +19,7 @@ IoT
 Kops
 LRU
 LTspice
+LaTeX
 LaTex
 Nadu
 Narayanan
@@ -34,4 +38,5 @@ ajprabhu
 configs
 datasets
 evolutions
+malloc
 mins

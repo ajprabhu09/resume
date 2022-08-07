@@ -1,3 +1,4 @@
+# Installation of https://github.com/rf-latex/bold-extra/blob/master/bold-extra.sty into  /usr/share/texmf/tex/latex/bold-extra/ is required for this work (create usr share folder if needed)
 all: build
 
 clean:
