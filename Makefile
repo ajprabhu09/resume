@@ -18,6 +18,8 @@ cleansetupgrammer:
 build: main.tex
 	echo "Building Resume!"
 	pdflatex main.tex
+	mv main.pdf AjinkyaPrabhu.pdf
+	
 
 spellcheck:
 	aspell -c main.tex --personal=spell-dict.txt --home-dir=.
