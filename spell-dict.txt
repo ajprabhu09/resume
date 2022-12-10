@@ -1,4 +1,4 @@
-personal_ws-1.1 en 41 
+personal_ws-1.1 en 49 
 AOI
 Ajinkya
 Allocator
@@ -6,6 +6,7 @@ AutoZ
 BTech
 BeagleBone
 BlackRock
+CMU
 Chowdhary
 Cloudera
 Convolutional
@@ -17,6 +18,7 @@ ISE
 ITC
 IoT
 Kops
+Kubernetes
 LRU
 LTspice
 LaTeX
@@ -27,8 +29,11 @@ Perumal
 Prabhu
 RBOR
 ROS
+RTOS
+Realtime
 Simulink
 Sybase
+TCP
 VHDL
 VIT
 Vellore
@@ -40,3 +45,6 @@ datasets
 evolutions
 malloc
 mins
+mutexes
+nrf
+runtime
