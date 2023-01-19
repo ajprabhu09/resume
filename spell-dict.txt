@@ -1,4 +1,4 @@
-personal_ws-1.1 en 49 
+personal_ws-1.1 en 52 
 AOI
 Ajinkya
 Allocator
@@ -11,6 +11,7 @@ Chowdhary
 Cloudera
 Convolutional
 DRDO
+FPGA
 FaceNet
 Gurugram
 IGVC
@@ -23,6 +24,7 @@ LRU
 LTspice
 LaTeX
 LaTex
+MixNet
 Nadu
 Narayanan
 Perumal
@@ -48,3 +50,4 @@ mins
 mutexes
 nrf
 runtime
+verilog

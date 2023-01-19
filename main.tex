@@ -176,71 +176,105 @@
     \resumeSubHeadingListStart
     \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh \textbf{-} Pennsylvania}
-      {Masters in Mobile and IoT Engineering}{May 2022 \textbf{--} Dec 2023}
+      {Masters in Mobile and IoT Engineering - 3.73/4.0}{May 2022 \textbf{--} Dec 2023}
         \resumeItemListStart
-            \resumeItem{Coursework - Intro to Computer Systems,
-                                     Intro to Embedded Systems*, Networking and the Internet*}
+            \resumeItem{Coursework - Compiler Design*, Distributed Systems*, Intro to Computer Systems, Information Security*
+                                     Embedded Systems, Computer Networks,}
             % \resumeItem{Current Coursework - Intro to Embedded Systems, Computer Vision} Adding this back once finalized 
         \resumeItemListEnd
     
     \resumeSubheading
       {Vellore Institute of Technology}{Vellore \textbf{-} Tamil Nadu}
-      {Bachelors in Electronics and Communication Engineering}{July 2016 \textbf{--} June 2020}
+      {Bachelors in Electronics and Communication Engineering - 9.1/10}{July 2016 \textbf{--} June 2020}
         \resumeItemListStart
-            \resumeItem{GPA - 9.1/10.0}
-            % \resumeItem{specialization in IoT and Sensors}
+            % \resumeItem{GPA - 9.1/10.0}
+
+          % ML courses 
+            % \resumeItem{Coursework - Intro to Deep Learning, Natural Language Processing, Information Theory}
+
+          % Systems Courses
+           \resumeItem{Coursework - Digital Logic Design - FPGA and verilog, Machine to Machine communication, Information Theory and Coding, Advanced Micro-controllers}
+
+
+
         \resumeItemListEnd 
     \resumeSubHeadingListEnd
     \vspace{0pt}
 
     \section{Projects}
     \vspace{1pt}
-      \resumeSubHeadingListStart
-        \resumeProjectHeading{\textbf{Dynamic Memory Allocator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
-            \resumeItemListStart
-              \resumeItem{Developed a malloc package implementation that achieved a peak performance of \textbf{74\symbol{\%}} utilization while maintaining a throughput of \textbf{$\sim{~}$9000Kops} in C }
-            \resumeItemListEnd
+      
+    \resumeSubHeadingListStart
+
+
+    % Systems projects 
+
+       
+      \resumeProjectHeading
+      {\textbf{X86 Back-trace}}{}
+         \resumeItemListStart
+           \resumeItem{A debugging library to print the back-trace of a function call without the need of an interactive debugger}
+           \resumeItem{Uses \textbf{ELF debug symbols} and \textbf{x86 calling convention} of stacking \textbf{stack-frame register} in the current stack-frame}
+            \vspace{-8pt}
+
+        \resumeItemListEnd
   
-         \resumeProjectHeading
-         {\textbf{CMU-TCP} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
-            \resumeItemListStart
-              \resumeItem{A \textbf{User-Space RFC compliant} implementation of \textbf{TCP protocol} for reliable delivery and congestion control in C using threads}
-            \resumeItemListEnd
+        % \resumeProjectHeading
+        %  {\textbf{CMU-TCP}}{}
+        %     \resumeItemListStart
+        %       \resumeItem{A \textbf{User-Space RFC compliant} implementation of \textbf{TCP protocol} for reliable delivery and congestion control in C using threads}
+        %     \resumeItemListEnd
+
+        \resumeProjectHeading{
+          \textbf{MixNet - Privacy Oriented Routing}
+        }{}
+          \resumeItemListStart
+            \resumeItem{A protocol to obfuscate routing in networks prone to snooping and allows for a higher degree of privacy}
+            \resumeItem{Employs random routing and the spanning tree protocol which provides \textbf{security, anonymity and fault tolerance}}
+          \resumeItemListEnd
          
         \resumeProjectHeading            
-          {\textbf{RTOS Kernel} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
+          {\textbf{Realtime Operating System Kernel}}{}
             \resumeItemListStart
-              \resumeItem{Developed a Low-Level Realtime Kernel for the nrf52840 \textbf{ARM Cortex M4} based board with task scheduling, \textbf{mutexes and memory protection in C and arm assembly}}
-            \resumeItemListEnd 
-          
-        % \resumeProjectHeading            
-        %   {\textbf{HTTP Proxy} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
-        %     \resumeItemListStart
-        %       \resumeItem{Designed a concurrent web proxy with thread-safe caching between concurrent requests}
-        %     \resumeItemListEnd
+              \resumeItem{A multithreaded kernel for the \textbf{ARM cortex M4} based \textbf{nrf52840} in \textbf{C and Assembly}}
+              \resumeItem{Implemented context switching, mutex and priority based scheduling rate-monotonic and priority-ceiling protocol}
+              \resumeItemListEnd 
     
         \resumeProjectHeading       
-          {\textbf{Contributor -  Vega} $|$ \emph{\href{https://github.com/rajasekarv/vega}{\color{blue}GitHub}}}{}
+          {\textbf{Contributor -  Vega}}{}
             \resumeItemListStart
-              \resumeItem{Developed distributed set subtract operation in a low-level language (\textbf{Rust}) for the open source project which is a native (no language runtime) implementation of the Spark distributed query engine while being an \textbf{order of magnitude} faster}
+              \resumeItem{Contributed to an open source project called \textbf{Vega} using the \textbf{Rust} programming language}
+              \resumeItem{Developed a distributed compute operator which is \textbf{10x} faster than the popular \textbf{apache spark} platform}
             \resumeItemListEnd
-    
+
+
+
+      % Older projects 
+      % good for networking roles
+      % \resumeProjectHeading            
+      %     {\textbf{HTTP Proxy} }{}
+      %       \resumeItemListStart
+      %         \resumeItem{Designed a concurrent web proxy with thread-safe caching between concurrent requests}
+      %       \resumeItemListEnd
+
+      % TCP project TODO:
+
+
+
+
+      %   \resumeProjectHeading
+      %     {\textbf{Symbolic differentiation}}{}
+      %         \resumeItemListStart
+      %           \resumeItem{A implementation of automatic differentiation using symbols as objects and operator overloading using pure python and }
+      %         \resumeItemListEnd
   
-            
-        % \resumeProjectHeading
-        %   {\textbf{Toy Symbolic differentiation} $|$ \emph{\href{https://github.com/ajprabhu09/uselessautograd}{\color{blue}GitHub}}}{}
-        %     \resumeItemListStart
-        %       \resumeItem{A toy implementation of automatic differentiation using symbols as objects and operator overloading}
-        %     \resumeItemListEnd
-  
-  
-          
-          % \resumeProjectHeading
-          %  {\textbf{Automatic Image Captioning}}{}
-          %   \resumeItemListStart
-          %     \resumeItem{Implemented distributed set subtract operation}
-          %   \resumeItemListEnd
-  
+      %   \resumeProjectHeading{\textbf{Dynamic Memory Allocator}}{}
+      %       \resumeItemListStart
+      %         \resumeItem{Developed a malloc package implementation that achieved a peak performance of \textbf{74\symbol{\%}} utilization while maintaining a throughput of \textbf{$\sim{~}$9000Kops} in C }
+      %       \resumeItemListEnd
+
+        
+
   
       \resumeSubHeadingListEnd
       \vspace{0pt}
@@ -259,17 +293,17 @@
       {BlackRock}{Gurugram, India}
       {Analyst (Software Engineer I/Data Engineer)}{Jan 2020 \textbf{--} July 2022}
         \resumeItemListStart
-            \resumeItem{Collaborated with a team of five software engineers to develop a data lake called RBOR (Regulatory Book of Records) with schema management and automatic ingestion on the Cloudera Data Platform (Spark)}
-            \resumeItem{Increased adoption of RBOR platform across BlackRock}
-            \resumeItem{Spearheaded ingestion of securities data (Airflow and Spark); ingested \textbf{600GB/week with 293 columns (100M rows)}}
-            \resumeItem{Boosted batch query performance by an \textbf{order of magnitude}}  
+            \resumeItem{Collaborated with five software engineers to develop a data lake called Regulatory Book of Records (RBOR)}
+            \resumeItem{Employed industry standard frameworks such as \textbf{Apache Spark} and \textbf{Airflow} compute and automated workflows}
+            \resumeItem{Spearheaded automated ingestion of securities data which pulls \textbf{600GB with 293 unique columns}}
+            \resumeItem{Boosted batch query performance of securities data by \textbf{10x} as compared to original relational query engine}  
         \resumeItemListEnd 
       \resumeSubheading
         {Mantra Labs}{Bangalore, India}
         {Software Engineering Intern}{May 2018 \textbf{--} June 2018}
           \resumeItemListStart
-              \resumeItem{Analyzed I2S protocol in its application to a solid-state microphone on the BeagleBone Black}
-              \resumeItem{Devised a facial recognition system to recognize unknown faces in security cameras using FaceNet algorithm}
+              \resumeItem{Analyzed and ported \textbf{I2S protocol} for a solid-state microphone on the \textbf{Beaglebone black} on linux driver platform}
+              \resumeItem{Devised a facial recognition system for security cameras using the \textbf{FaceNet} research paper at an accuracy of \textbf{98\symbol{\%}}}
           \resumeItemListEnd 
     \resumeSubHeadingListEnd
     \vspace{0pt}
@@ -282,16 +316,16 @@
       {ITC}{ Vellore Institute of Technology  \textbf{-} Vellore}
       {Student Researcher}{May 2019 \textbf{--}  July 2019}
         \resumeItemListStart
-            \resumeItem{Collaborated with a team of 5 students to develop a prototype that detects defects in high aspect ratio objects}
-            \resumeItem{Developed a Convolutional Neural Network in tandem with an image processing pipeline for object detection and classification}
+            \resumeItem{Collaborated with a team of students to develop a prototype that detects defects in high aspect ratio objects}
+            \resumeItem{Developed a convolutional neural network and image processing pipeling for object detection and classification}
             \resumeItem{Achieved an accuracy of \textbf{82\symbol{\%}} while maintaining throughput of \textbf{five sticks per second}}
             \resumeItemListEnd
     \resumeSubheading
       {Creation Labs - Team AutoZ}{Vellore Institute of Technology \textbf{-} Vellore}
       {Student Researcher}{Sept 2018 \textbf{--}  Nov 2019}
         \resumeItemListStart
-            \resumeItem{Collaborated with a team of 10 students to develop an autonomous mobile robot to compete in IGVC competition}
-            \resumeItem{Led development of sensor localization and electrical drive subsystem}
+            \resumeItem{Collaborated with a team of 10 students to develop an autonomous mobile robot}
+            \resumeItem{Led development of sensor localization using \textbf{kalman filters on GPS, inertial motion unit and wheel encoders}}
             % \resumeItem{Successfully secured funding from DRDO for defense research during tenure as vice-captain}
             \resumeItemListEnd
   \resumeSubHeadingListEnd

@@ -3,6 +3,7 @@
 % Author : Ajinkya Prabhu 
 % License : MIT
 %------------------------
+%& -job-name=AjinkyaPrabhu
 
 \documentclass[12pt]{article}
 
@@ -30,6 +31,7 @@
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
+\usepackage{times}
 
 % serif
 % \usepackage{CormorantGaramond}
@@ -139,7 +141,7 @@
 \begin{flushleft}
     \textbf{\Large Ajinkya Prabhu} \\ \vspace{2 pt}
     \small
-    \faMobile \hspace{.5pt} \href{tel:+919790555473}{979-055-5473}
+    \faMobile \hspace{.5pt} \href{tel:+1 412-636-7619}{412-636-7619}
     $|$
     \small
     \faAt \hspace{.5pt} \href{mailto:amprabhu@andrew.cmu.edu}{amprabhu@andrew.cmu.edu}
@@ -151,15 +153,12 @@
     \faGithub \hspace{.5pt} \href{https://github.com/ajprabhu09}{ajprabhu09}
     % $|$
     % \faGlobe \hspace{.5pt} \href{Link to Portfolio}{Portfolio}
-    % $|$
+    $|$
     % % TODO: Add google maps location
-    % \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/nDiixFmLt41dn9vq9} {Pittsburgh, Pennsylvania}
+    \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/nDiixFmLt41dn9vq9} {Pittsburgh, Pennsylvania}
 \end{flushleft}
 
-
-
-
-%----------- EDUCATION -----------
+%----------- PROJECTS -----------
 % TODO: Complete
 % \section{Education}
 %   \resumeSubHeadingListStart
@@ -177,38 +176,118 @@
     \resumeSubHeadingListStart
     \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh \textbf{-} Pennsylvania}
-      {Masters in Mobile and IoT Engineering}{May 2022 \textbf{--} Dec 2023}
+      {Masters in Mobile and IoT Engineering - 3.73/4.0}{May 2022 \textbf{--} Dec 2023}
         \resumeItemListStart
-            \resumeItem{Intro to Computer Systems - 15513}
+            \resumeItem{Coursework - Compiler Design*, Distributed Systems*, Intro to Computer Systems, Information Security*
+                                     Embedded Systems, Computer Networks,}
+            % \resumeItem{Current Coursework - Intro to Embedded Systems, Computer Vision} Adding this back once finalized 
         \resumeItemListEnd
     
     \resumeSubheading
       {Vellore Institute of Technology}{Vellore \textbf{-} Tamil Nadu}
-      {Bachelors in Electronics and Communication Engineering}{July 2016 \textbf{--} June 2020}
+      {Bachelors in Electronics and Communication Engineering - 9.1}{July 2016 \textbf{--} June 2020}
         \resumeItemListStart
-            \resumeItem{GPA - 9.1/10.0}
-            \resumeItem{specialization in IoT and Sensors}
+            % \resumeItem{GPA - 9.1/10.0}
+
+          % ML courses 
+            % \resumeItem{Coursework - Intro to Deep Learning, Natural Language Processing, Information Theory}
+
+          % Systems Courses
+           \resumeItem{Croursework - Digital Logic Design - FPGA and verilog, Machine to Machine communication, Information Theory and Coding, Advanced Microcontrollers}
+
+
+
         \resumeItemListEnd 
     \resumeSubHeadingListEnd
     \vspace{0pt}
+
+    \section{Projects}
+    \vspace{1pt}
+      \resumeSubHeadingListStart
+
+       
+      \resumeProjectHeading
+      {\textbf{x86 Backtrace}}{}
+         \resumeItemListStart
+           \resumeItem{A debugging library to print the backtrace of a function call without the need of an interactive debugger}
+           \resumeItem{Uses \textbf{ELF debug symbols} and \textbf{x86 calling convention} of stacking \textbf{stackframe register} in the current stackframe}
+
+         \resumeItemListEnd
+  
+        \resumeProjectHeading
+         {\textbf{CMU-TCP}}{}
+            \resumeItemListStart
+              \resumeItem{A \textbf{User-Space RFC compliant} implementation of \textbf{TCP protocol} for reliable delivery and congestion control in C using threads}
+            \resumeItemListEnd
+
+        \resumeProjectHeading{
+          \textbf{MixNet - Privacy Oriented Routing}
+        }{}
+          \resumeItemListStart
+            \resumeItem{A protocol to obfuscate routing in networks prone to snooping and allows for a higher degree of privacy}
+            \resumeItem{Employs encryption, random routing and the spanning tree protocol which provides security, anonimity and fault tolerance}
+          \resumeItemListEnd
+         
+        \resumeProjectHeading            
+          {\textbf{RTOS Kernel}}{}
+            \resumeItemListStart
+              \resumeItem{Developed a Low-Level Realtime Kernel for the nrf52840 \textbf{ARM Cortex M4} based board with task scheduling, \textbf{mutexes and memory protection in C and arm assembly}}
+            \resumeItemListEnd 
+    
+        \resumeProjectHeading       
+          {\textbf{Contributor -  Vega}}{}
+            \resumeItemListStart
+              \resumeItem{Developed distributed set subtract operation in a low-level language (\textbf{Rust}) for the open source project which is a native (no language runtime) implementation of the Spark distributed query engine while being an \textbf{order of magnitude} faster}
+            \resumeItemListEnd
+
+      % \resumeProjectHeading            
+      %     {\textbf{HTTP Proxy} }{}
+      %       \resumeItemListStart
+      %         \resumeItem{Designed a concurrent web proxy with thread-safe caching between concurrent requests}
+      %       \resumeItemListEnd
+
+
+      %   \resumeProjectHeading
+      %     {\textbf{Symbolic differentiation}}{}
+      %         \resumeItemListStart
+      %           \resumeItem{A implementation of automatic differentiation using symbols as objects and operator overloading using pure python and }
+      %         \resumeItemListEnd
+  
+      %   \resumeProjectHeading{\textbf{Dynamic Memory Allocator}}{}
+      %       \resumeItemListStart
+      %         \resumeItem{Developed a malloc package implementation that achieved a peak performance of \textbf{74\symbol{\%}} utilization while maintaining a throughput of \textbf{$\sim{~}$9000Kops} in C }
+      %       \resumeItemListEnd
+
+        
+
+  
+      \resumeSubHeadingListEnd
+      \vspace{0pt}
+  
+  
+  
+  
+  %----------- EDUCATION -----------
+  % TODO: Complete
+  
 %----------- WORK EXPERIENCE -----------
 % TODO: Complete
 \section{Work Experience}
   \resumeSubHeadingListStart
   \resumeSubheading
       {BlackRock}{Gurugram, India}
-      {Software Engineer I}{Jan 2020 \textbf{--} July 2022}
+      {Analyst (Software Engineer I/Data Engineer)}{Jan 2020 \textbf{--} July 2022}
         \resumeItemListStart
-            \resumeItem{Collaborated with a team of five software engineers to develop a data lake called RBOR (Regulatory Book of Records) with schema management and automatic ingestion on the Cloudera Data Platform}
-            \resumeItem{Increased the adoption of the RBOR platform across BlackRock}
-            \resumeItem{Spearheaded ingestion of securities data which brings in \textbf{600GB/week with 293 columns (100M rows)}}
-            \resumeItem{Boosted query performance by \textbf{60 times}}  
+            \resumeItem{Collaborated with a team of five software engineers to develop a data lake called RBOR (Regulatory Book of Records) with schema management and automatic ingestion on the Cloudera Data Platform (Spark)}
+            \resumeItem{Increased adoption of RBOR platform across BlackRock}
+            \resumeItem{Spearheaded ingestion of securities data (Airflow and Spark); ingested \textbf{600GB/week with 293 columns (100M rows)}}
+            \resumeItem{Boosted batch query performance by an \textbf{order of magnitude}}  
         \resumeItemListEnd 
       \resumeSubheading
-        {Mantra Labs}{Banglore, India}
-        {Software Engineering Intern}{Jan 2020 \textbf{--} July 2022}
+        {Mantra Labs}{Bangalore, India}
+        {Software Engineering Intern}{May 2018 \textbf{--} June 2018}
           \resumeItemListStart
-              \resumeItem{Analysed the I2S protocol in its application to a solid-state microphone on the BeagleBone Black}
+              \resumeItem{Analyzed I2S protocol in its application to a solid-state microphone on the BeagleBone Black}
               \resumeItem{Devised a facial recognition system to recognize unknown faces in security cameras using FaceNet algorithm}
           \resumeItemListEnd 
     \resumeSubHeadingListEnd
@@ -216,13 +295,13 @@
 
 %----------- RESEARCH EXPERIENCE -----------
 % % TODO: Complete
-\section{Research Experience}
+\section{Research}
   \resumeSubHeadingListStart
     \resumeSubheading
       {ITC}{ Vellore Institute of Technology  \textbf{-} Vellore}
       {Student Researcher}{May 2019 \textbf{--}  July 2019}
         \resumeItemListStart
-            \resumeItem{Collaborated with a team of 5 students to develop a prototype which detects defects in incense sticks}
+            \resumeItem{Collaborated with a team of 5 students to develop a prototype that detects defects in high aspect ratio objects}
             \resumeItem{Developed a Convolutional Neural Network in tandem with an image processing pipeline for object detection and classification}
             \resumeItem{Achieved an accuracy of \textbf{82\symbol{\%}} while maintaining throughput of \textbf{five sticks per second}}
             \resumeItemListEnd
@@ -231,8 +310,8 @@
       {Student Researcher}{Sept 2018 \textbf{--}  Nov 2019}
         \resumeItemListStart
             \resumeItem{Collaborated with a team of 10 students to develop an autonomous mobile robot to compete in IGVC competition}
-            \resumeItem{Led the development of the sensor localization and electrical driver subsystem}
-            \resumeItem{Successfully secured funding from DRDO for defense research during tenure as vice-captain}
+            \resumeItem{Led development of sensor localization and electrical drive subsystem}
+            % \resumeItem{Successfully secured funding from DRDO for defense research during tenure as vice-captain}
             \resumeItemListEnd
   \resumeSubHeadingListEnd
     \vspace{0pt}
@@ -240,61 +319,15 @@
 %----------- AWARDS & ACHIEVEMENTS -----------
 % TODO: Complete
 
-
-%----------- PROJECTS -----------
-% TODO: Complete
-\section{Projects}
-  \vspace{1pt}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading{\textbf{Dynamic Memory Allocator} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Developed a malloc package implementation that achieved a peak performance of \textbf{74\symbol{\%}} utilization while maintaining a throughput of \textbf{$\sim{~}$9000Kops} }
-          \resumeItemListEnd
-
-       \resumeProjectHeading
-       {\textbf{Tiny Shell} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Implemented a shell application using UNIX fork and signal handelling}
-          \resumeItemListEnd
-        
-        
-      \resumeProjectHeading            
-        {\textbf{HTTP Proxy} $|$ \emph{\href{https://raw.githubusercontent.com/ajprabhu09/resume/master/placeholder.txt}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Designed a concurrent web proxy with threadsafe caching between concurrent requests}
-          \resumeItemListEnd
-  
-      \resumeProjectHeading       
-        {\textbf{Contributor -  Vega} $|$ \emph{\href{https://github.com/rajasekarv/vega}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Developed the distributed set subtract operation in Rust}
-          \resumeItemListEnd
-  
-      % \resumeProjectHeading
-      %   {\textbf{Toy Symbolic differentiation} $|$ \emph{\href{https://github.com/ajprabhu09/uselessautograd}{\color{blue}GitHub}}}{}
-      %     \resumeItemListStart
-      %       \resumeItem{A toy implementation of automatic differentiation using symbols as objects and operator overloading}
-      %     \resumeItemListEnd
-
-
-        
-        % \resumeProjectHeading
-        %  {\textbf{Automatic Image Captioning}}{}
-        %   \resumeItemListStart
-        %     \resumeItem{Implemented distributed set subtract operation}
-        %   \resumeItemListEnd
-
-
-    \resumeSubHeadingListEnd
-    \vspace{0pt}
 %----------- SKILLS -----------
-% TODO: Modify based on job app
+% TODO: Modify based on the job app
 \section{Skills}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming Languages:}{ C, C++, Java, Python, MATLAB, SQL, VHDL, Rust, Scala} \\
-        \textbf{Technologies:}{ Git, Arduino, ROS, LaTeX, Spark, TensorFlow, PyTorch, Hadoop, Linux} \\
-        \textbf{Languages:}{ English (Professional), Hindi (Native), Marathi }
+        \textbf{Programming Languages:}{ Python, Java, Scala, C, C++, SQL, Rust, MATLAB, Assembly} \\
+        % \textbf{Programming Languages:}{C, C++, Java, Python, SQL, Rust, Scala} \\
+        \textbf{Technologies:}{ Git, Arduino, ROS, LaTeX, Spark, Docker, Kubernetes, TensorFlow, PyTorch, Hadoop, Linux} \\
+        \textbf{Languages:}{ English, Hindi, Marathi }
     }}
     % \vspace{-4pt}
   \resumeSubHeadingListEnd
@@ -309,7 +342,7 @@
   \resumeSubHeadingListEnd
 
 
-
+% should i keep this?
 \section{Awards \& Achievements}
   \resumeSubHeadingListStart
     \small{\item{
@@ -363,3 +396,7 @@
 
 %-------------------------------------------
 \end{document}
+
+
+% Notes for bullet points 
+% - Action verb, what it was , how we did it and result(outcome or impact)
