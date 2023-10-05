@@ -176,9 +176,9 @@
     \resumeSubHeadingListStart
     \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh \textbf{-} Pennsylvania}
-      {Master of Science in Mobile and IoT Engineering - 3.64/4.0}{May 2022 \textbf{--} Dec 2023}
+      {Master of Science in Mobile and IoT Engineering - 3.64/4.0}{May 2022 \textbf{--} December 2023}
         \resumeItemListStart
-            \resumeItem{Coursework - Compiler Design, Distributed Systems, Intro to Computer Systems, Information Security
+            \resumeItem{Coursework - Compiler Design, Distributed Systems, Intro to Computer Systems, Information Security, 
                                      Embedded Systems, Computer Networks}
             % \resumeItem{Current Coursework - Intro to Embedded Systems, Computer Vision} Adding this back once finalized 
         \resumeItemListEnd
@@ -199,10 +199,10 @@
 
         \resumeItemListEnd 
     \resumeSubHeadingListEnd
-    \vspace{0pt}
+    \vspace{-3.5pt}
 
     \section{Projects}
-    \vspace{1pt}
+    % \vspace{1pt}
       
     \resumeSubHeadingListStart
 
@@ -212,18 +212,28 @@
      \resumeProjectHeading            
           {\textbf{Realtime Operating System Kernel}}{}
             \resumeItemListStart
-              \resumeItem{A multithreaded kernel for the \textbf{ARM cortex M4} based \textbf{nrf52840} in \textbf{C and Assembly}}
-              \resumeItem{Implemented context switching, mutex, thread scheduling and kernel mode drivers for \textbf{I2C, PWM, UART, GPIO}}
+              \resumeItem{A multithreaded kernel for the ARM cortex M4 in C and Assembly}
+              \resumeItem{Implemented context switching, mutex, thread scheduling and kernel mode drivers for I2C, PWM, UART, GPIO}
             % \resumeItem{Developed kernel drivers and user api for \textbf{UART, GPIO, I2C and PWM peripherals}.}
               \resumeItemListEnd 
+        
+        
+        % 
 
+      % \resumeProjectHeading
+      % {\textbf{X86 Back-trace}}{}
+      %    \resumeItemListStart
+      %      \resumeItem{A debugging library to print the back-trace of a function call without the need of an interactive debugger}
+      %      \resumeItem{Uses \textbf{ELF debug symbols} and \textbf{x86 calling convention} of stacking \textbf{stack-frame register} in the current stack-frame}
+      %       \vspace{-8pt}
 
-      \resumeProjectHeading
-      {\textbf{X86 Back-trace}}{}
+      %   \resumeItemListEnd
+
+       \resumeProjectHeading
+      {\textbf{Zoe II Rover}}{}
          \resumeItemListStart
-           \resumeItem{A debugging library to print the back-trace of a function call without the need of an interactive debugger}
-           \resumeItem{Uses \textbf{ELF debug symbols} and \textbf{x86 calling convention} of stacking \textbf{stack-frame register} in the current stack-frame}
-            \vspace{-8pt}
+           \resumeItem{ Research project as part of CMU Robotics Institute working on the successor to the Zoe Rover}
+           \resumeItem{Developing the 3-D drive controller for suspension-less traversal on extremely rough terrain}
 
         \resumeItemListEnd
 
@@ -231,14 +241,15 @@
         \resumeProjectHeading
          {\textbf{C0C Compiler}}{}
             \resumeItemListStart
-              \resumeItem{A turing complete safe subset of the C0 language (used at CMU to teach programming) extended with copying \textbf{garbage collector and aggressive optimization techniques} (Register Allocation, CSE.., and Dead code elimination).}
+              \resumeItem{A Turing complete safe subset of the C0 language (used at CMU to teach programming) extended with copying garbage collector and aggressive optimization techniques (register allocation, CSE, and dead code elimination), implemented using Rust}
+              % BUG: way top long/
             \resumeItemListEnd
 
   
         \resumeProjectHeading
          {\textbf{CMU-TCP}}{}
             \resumeItemListStart
-              \resumeItem{A \textbf{User-Space RFC compliant} implementation of \textbf{TCP protocol} for reliable delivery and congestion control in C}
+              \resumeItem{A user-space RFC compliant implementation of TCP protocol for reliable delivery and congestion control written in C}
             \resumeItemListEnd
 
        
@@ -253,13 +264,22 @@
         %   \resumeItemListEnd
          
        
-    
+    %  Put Certificate chain and padding oracle
+
+        
         \resumeProjectHeading       
-          {\textbf{Contributor -  Vega}}{}
+          {\textbf{Padding Oracle Attack on CBC encryption}}{}
             \resumeItemListStart
-              \resumeItem{Contributed to an open source project called \textbf{Vega} using the \textbf{Rust} programming language}
-              \resumeItem{Developed a distributed compute operator which is \textbf{10x} faster than the popular \textbf{apache spark} platform}
+              \resumeItem{Implemented a python script to decrypt and encrypt text from a padding server using the fact that the server provides information about the validity of encrypted text's padding.}
             \resumeItemListEnd
+
+        
+        % \resumeProjectHeading       
+        %   {\textbf{Resource Aware ML}}{}
+        %     \resumeItemListStart
+        %       \resumeItem{Research as part of CMU Principles of Programming Lab to statically produce resource usage of ML programs}
+        %       \resumeItem{Building a OCaml to SML transpiler to support the analysis of OCaml programs}
+        %     \resumeItemListEnd
 
 
 
@@ -307,7 +327,7 @@
         {Qualcomm}{San Diego, California}
         {Engineering Intern}{May 2023 \textbf{--} August 2023}
           \resumeItemListStart
-              \resumeItem{Developed an \textbf{user-mode emulation framework} for running camera software tests without needing a physical device using \textbf{C++ and CMake}}
+              \resumeItem{Developed a user-mode emulation framework for running camera software tests without needing a physical device using C++ and CMake}
               % \resumeItem{}
           \resumeItemListEnd 
 
@@ -317,9 +337,9 @@
       {Software Engineer}{Jan 2020 \textbf{--} July 2022}
         \resumeItemListStart
             \resumeItem{Collaborated with five software engineers to develop a data lake called Regulatory Book of Records (RBOR)}
-            \resumeItem{Employed industry standard frameworks such as \textbf{Apache Spark} and \textbf{Airflow} compute and automated workflows}
-            \resumeItem{Spearheaded automated ingestion of securities data which pulls \textbf{600GB with 293 unique columns}}
-            \resumeItem{Boosted batch query performance of securities data by \textbf{10x} as compared to original relational query engine}  
+            \resumeItem{Employed industry standard frameworks such as Apache Spark and Airflow compute and automated workflows}
+            \resumeItem{Spearheaded automated ingestion of securities data which pulls 600GB with 293 unique columns}
+            \resumeItem{Boosted batch query performance of securities data by 10x as compared to original relational query engine}  
         \resumeItemListEnd 
       % \resumeSubheading
       %   {Mantra Labs}{Bangalore, India}
@@ -340,15 +360,15 @@
       {Student Researcher}{May 2019 \textbf{--}  July 2019}
         \resumeItemListStart
             \resumeItem{Collaborated with a team of students to develop a prototype that detects defects in high aspect ratio objects}
-            \resumeItem{Developed a convolutional neural network and image processing pipeling for object detection and classification}
-            \resumeItem{Achieved an accuracy of \textbf{82\symbol{\%}} while maintaining throughput of \textbf{five sticks per second}}
+            \resumeItem{Developed a convolutional neural network and image processing pipeline for object detection and classification}
+            \resumeItem{Achieved an accuracy of 82\symbol{\%} while maintaining throughput of five objects per second}
             \resumeItemListEnd
     \resumeSubheading
       {Creation Labs - Team AutoZ}{Vellore Institute of Technology \textbf{-} Vellore}
-      {Student Researcher}{Sept 2018 \textbf{--}  Nov 2019}
+      {Student Researcher}{September 2018 \textbf{--}  November 2019}
         \resumeItemListStart
             \resumeItem{Collaborated with a team of 10 students to develop an autonomous mobile robot}
-            \resumeItem{Led development of sensor localization using \textbf{kalman filters on GPS, inertial motion unit and wheel encoders}}
+            \resumeItem{Led development of sensor localization using kalman filters on GPS, inertial motion unit and wheel encoders}
             % \resumeItem{Successfully secured funding from DRDO for defense research during tenure as vice-captain}
             \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -362,8 +382,8 @@
 \section{Skills}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming Languages: }{C, C++, Golang , Rust, Python, Scala, SQL,GNU Assembly} \\
-        \textbf{Technologies: }{GNU Toolchain, Linux, Git, CUDA, ROS, Apache Spark, Docker, Kubernetes, TensorFlow, PyTorch, Hadoop} \\
+        \textbf{Programming Languages: }{C, C++, Golang, OCaml, Rust, Python, Java, Scala, SQL, GNU Assembly} \\
+        \textbf{Technologies: }{GNU Toolchain, Linux, Git, CUDA, ROS, Apache Spark, Docker, Kubernetes, TensorFlow, PyTorch, Hadoop, Spring Boot} \\
       }}
     % \vspace{-4pt}
   \resumeSubHeadingListEnd
@@ -382,7 +402,7 @@
 \section{Awards \& Achievements}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Merit Scholarship:}{ Awarded merit Scholarship for exceptional academic performance for 2 consecutive years} \\ 
+        \textbf{Goa Scholars 2022-23:}{ Awarded a merit based scholarship for exemplary over performance as one of the top 30 in the state of Goa, India.} \\ 
         }}
   \resumeSubHeadingListEnd
 
