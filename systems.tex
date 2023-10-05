@@ -1,0 +1,467 @@
+%-------------------------
+% Resume in Latex
+% Author : Ajinkya Prabhu 
+% License : MIT
+%------------------------
+%& -job-name=AjinkyaPrabhu
+
+\documentclass[12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{bold-extra}
+\usepackage{setspace}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+\usepackage{times}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+% Sections formatting Small everywhere
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\bfseries\raggedright\small
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1}
+  } 
+  \vspace{-3pt}
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}
+}
+
+% Use if multiple majors
+\newcommand{\resumeEducationHeading}[6]{
+      \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small#2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \small#2 \\ 
+    \end{tabular*}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{10pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-8pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setstretch{0.75}
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{flushleft}
+    \textbf{\Large Ajinkya Prabhu} \\ \vspace{2 pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:+1 412-636-7619}{412-636-7619}
+    $|$
+    \small
+    \faAt \hspace{.5pt} \href{mailto:amprabhu@andrew.cmu.edu}{amprabhu@andrew.cmu.edu}
+    $|$
+    \small
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/ajinkyaprabhu/}{ajinkyaprabhu}
+    $|$
+    \small
+    \faGithub \hspace{.5pt} \href{https://github.com/ajprabhu09}{ajprabhu09}
+    % $|$
+    % \faGlobe \hspace{.5pt} \href{Link to Portfolio}{Portfolio}
+    $|$
+    % % TODO: Add google maps location
+    \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/nDiixFmLt41dn9vq9} {Pittsburgh, Pennsylvania}
+\end{flushleft}
+
+%----------- PROJECTS -----------
+% TODO: Complete
+% \section{Education}
+%   \resumeSubHeadingListStart
+    
+%    \resumeSubheading
+%       {Some Place}{Location \textbf{-}Place}
+%       {Position}{Jun 2022 \textbf{--} Aug 2022}
+%         \resumeItemListStart
+%             \resumeItem{Detail 1}
+%             \resumeItem{Detail 2}
+%         \resumeItemListEnd
+   
+%   \resumeSubHeadingListEnd
+\section{Education}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh \textbf{-} Pennsylvania}
+      {Master of Science in Mobile and IoT Engineering - 3.64/4.0}{May 2022 \textbf{--} December 2023}
+        \resumeItemListStart
+            \resumeItem{Coursework - Compiler Design, Distributed Systems, Intro to Computer Systems, Information Security, 
+                                     Embedded Systems, Computer Networks}
+            % \resumeItem{Current Coursework - Intro to Embedded Systems, Computer Vision} Adding this back once finalized 
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {Vellore Institute of Technology}{Vellore \textbf{-} Tamil Nadu}
+      {Bachelors in Electronics and Communication Engineering - 9.1/10}{July 2016 \textbf{--} June 2020}
+        \resumeItemListStart
+            % \resumeItem{GPA - 9.1/10.0}
+
+          % ML courses 
+            % \resumeItem{Coursework - Intro to Deep Learning, Natural Language Processing, Information Theory}
+
+          % Systems Courses
+           \resumeItem{Coursework - Digital Logic Design, Intro to Deep Learning, Advanced Micro-controllers, Signal Analysis and Processing}
+
+
+
+        \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+    \vspace{-3.5pt}
+
+    \section{Projects}
+    % \vspace{1pt}
+      
+    \resumeSubHeadingListStart
+
+
+    % Systems projects 
+
+     \resumeProjectHeading            
+          {\textbf{Realtime Operating System Kernel}}{}
+            \resumeItemListStart
+              \resumeItem{A multithreaded kernel for the ARM cortex M4 in C and Assembly}
+              \resumeItem{Implemented context switching, mutex, thread scheduling and kernel mode drivers for I2C, PWM, UART, GPIO}
+            % \resumeItem{Developed kernel drivers and user api for \textbf{UART, GPIO, I2C and PWM peripherals}.}
+              \resumeItemListEnd 
+        
+        
+        % 
+
+      % \resumeProjectHeading
+      % {\textbf{X86 Back-trace}}{}
+      %    \resumeItemListStart
+      %      \resumeItem{A debugging library to print the back-trace of a function call without the need of an interactive debugger}
+      %      \resumeItem{Uses \textbf{ELF debug symbols} and \textbf{x86 calling convention} of stacking \textbf{stack-frame register} in the current stack-frame}
+      %       \vspace{-8pt}
+
+      %   \resumeItemListEnd
+
+     \resumeProjectHeading
+      {\textbf{Safety Oriented Operating System Kernel}}{}
+         \resumeItemListStart
+           \resumeItem{ An X86 kernel with keyboard, console and physical page manager with focus on safety using the guarantees of the rust compiler }
+        \resumeItemListEnd
+
+
+      %  \resumeProjectHeading
+      % {\textbf{Zoe II Rover}}{}
+      %    \resumeItemListStart
+      %      \resumeItem{ Research project as part of CMU Robotics Institute working on the successor to the Zoe Rover}
+      %      \resumeItem{Developing the 3-D drive controller for suspension-less traversal on extremely rough terrain}
+
+      %   \resumeItemListEnd
+
+     % COmpilers project
+        \resumeProjectHeading
+         {\textbf{C0C Compiler}}{}
+            \resumeItemListStart
+              \resumeItem{A Turing complete safe subset of the C0 language (used at CMU to teach programming) extended with copying garbage collector and aggressive optimization techniques (register allocation, CSE, and dead code elimination), implemented using Rust}
+              % BUG: way top long/
+            \resumeItemListEnd
+
+  
+        \resumeProjectHeading
+         {\textbf{CMU-TCP}}{}
+            \resumeItemListStart
+              \resumeItem{A user-space RFC compliant implementation of TCP protocol for reliable delivery and congestion control written in C}
+            \resumeItemListEnd
+
+       
+        
+
+        % \resumeProjectHeading{
+        %   \textbf{MixNet - Privacy Oriented Routing}
+        % }{}
+        %   \resumeItemListStart
+        %     \resumeItem{A protocol to obfuscate routing in networks prone to snooping and allows for a higher degree of privacy}
+        %     \resumeItem{Employs random routing and the spanning tree protocol which provides \textbf{security, anonymity and fault tolerance}}
+        %   \resumeItemListEnd
+         
+       
+    %  Put Certificate chain and padding oracle
+
+        % Security
+        % \resumeProjectHeading       
+        %   {\textbf{Padding Oracle Attack on CBC encryption}}{}
+        %     \resumeItemListStart
+        %       \resumeItem{Implemented a python script to decrypt and encrypt text from a padding server using the fact that the server provides information about the validity of encrypted text's padding.}
+        %     \resumeItemListEnd
+
+        
+        % \resumeProjectHeading       
+        %   {\textbf{Resource Aware ML}}{}
+        %     \resumeItemListStart
+        %       \resumeItem{Research as part of CMU Principles of Programming Lab to statically produce resource usage of ML programs}
+        %       \resumeItem{Building a OCaml to SML transpiler to support the analysis of OCaml programs}
+        %     \resumeItemListEnd
+
+
+
+      % Older projects 
+      % good for networking roles
+      % \resumeProjectHeading            
+      %     {\textbf{HTTP Proxy} }{}
+      %       \resumeItemListStart
+      %         \resumeItem{Designed a concurrent web proxy with thread-safe caching between concurrent requests}
+      %       \resumeItemListEnd
+
+      % TCP project TODO:
+
+
+
+
+      %   \resumeProjectHeading
+      %     {\textbf{Symbolic differentiation}}{}
+      %         \resumeItemListStart
+      %           \resumeItem{A implementation of automatic differentiation using symbols as objects and operator overloading using pure python and }
+      %         \resumeItemListEnd
+
+
+  
+        \resumeProjectHeading{\textbf{Dynamic Memory Allocator}}{}
+            \resumeItemListStart
+              \resumeItem{Developed a malloc package implementation that achieved a peak performance of 74\symbol{\%} utilization while maintaining a throughput of $\sim{~}$9000Kops in C }
+            \resumeItemListEnd
+
+        
+
+  
+      \resumeSubHeadingListEnd
+      \vspace{0pt}
+  
+  
+  
+  
+  %----------- EDUCATION -----------
+  % TODO: Complete
+  
+%----------- WORK EXPERIENCE -----------
+% TODO: Complete
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Qualcomm}{San Diego, California}
+        {Engineering Intern}{May 2023 \textbf{--} August 2023}
+          \resumeItemListStart
+              \resumeItem{Developed a user-mode emulation framework for running camera software tests without needing a physical device using C++ and CMake}
+              % \resumeItem{}
+          \resumeItemListEnd 
+
+  
+  \resumeSubheading
+      {BlackRock}{Gurugram, India}
+      {Software Engineer}{Jan 2020 \textbf{--} July 2022}
+        \resumeItemListStart
+            \resumeItem{Collaborated with five software engineers to develop a data lake called Regulatory Book of Records (RBOR)}
+            \resumeItem{Employed industry standard frameworks such as Apache Spark and Airflow compute and automated workflows}
+            \resumeItem{Spearheaded automated ingestion of securities data which pulls 600GB with 293 unique columns}
+            \resumeItem{Boosted batch query performance of securities data by 10x as compared to original relational query engine}  
+        \resumeItemListEnd 
+      % \resumeSubheading
+      %   {Mantra Labs}{Bangalore, India}
+      %   {Software Engineering Intern}{May 2018 \textbf{--} June 2018}
+      %     \resumeItemListStart
+      %         \resumeItem{Analyzed and ported \textbf{I2S protocol} for a solid-state microphone on the \textbf{Beaglebone black} on linux driver platform}
+      %         \resumeItem{Devised a facial recognition system for security cameras using the \textbf{FaceNet} research paper at an accuracy of \textbf{98\symbol{\%}}}
+      %     \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+    \vspace{0pt}
+
+%----------- RESEARCH EXPERIENCE -----------
+% % TODO: Complete
+\section{Research}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ITC}{ Vellore Institute of Technology  \textbf{-} Vellore}
+      {Student Researcher}{May 2019 \textbf{--}  July 2019}
+        \resumeItemListStart
+            \resumeItem{Collaborated with a team of students to develop a prototype that detects defects in high aspect ratio objects}
+            \resumeItem{Developed a convolutional neural network and image processing pipeline for object detection and classification}
+            \resumeItem{Achieved an accuracy of 82\symbol{\%} while maintaining throughput of five objects per second}
+            \resumeItemListEnd
+    \resumeSubheading
+      {Creation Labs - Team AutoZ}{Vellore Institute of Technology \textbf{-} Vellore}
+      {Student Researcher}{September 2018 \textbf{--}  November 2019}
+        \resumeItemListStart
+            \resumeItem{Collaborated with a team of 10 students to develop an autonomous mobile robot}
+            \resumeItem{Led development of sensor localization using kalman filters on GPS, inertial motion unit and wheel encoders}
+            % \resumeItem{Successfully secured funding from DRDO for defense research during tenure as vice-captain}
+            \resumeItemListEnd
+  \resumeSubHeadingListEnd
+    \vspace{0pt}
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+% TODO: Complete
+
+%----------- SKILLS -----------
+% TODO: Modify based on the job app
+\section{Skills}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Programming Languages: }{C, C++, Golang, OCaml, Rust, Python, Java, Scala, SQL, GNU Assembly (x86 and ARM)} \\
+        \textbf{Technologies: }{GNU Toolchain, LLVM ,  Linux, Git, CUDA, ROS, Apache Spark, Docker, Kubernetes, TensorFlow, PyTorch, Hadoop, Spring Boot} \\
+      }}
+    % \vspace{-4pt}
+  \resumeSubHeadingListEnd
+
+
+  \section{Publications \& Patents}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Publication:}{ Image Compression and Reconstruction Using Encoder-Decoder Convolutional Neural Network - Prabhu A., Chowdhary S., Narayanan S.J., Perumal B.} \\ 
+        \textbf{Patent:}{ A scanning device for inspecting and sorting high aspect ratio objects and method thereof - N202041047428} 
+      }}
+  \resumeSubHeadingListEnd
+
+
+% should i keep this?
+\section{Awards \& Achievements}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Goa Scholars 2022-23:}{ Awarded a merit based scholarship for exemplary over performance as one of the top 30 in the state of Goa, India.} \\ 
+        }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- CERTIFICATES -----------
+
+% \section{Certificates}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- ORGANIZATIONS -----------
+
+% \section{Organizations}
+%   \resumeSubHeadingListStart
+    
+%     \resumeOrganizationHeading
+%       {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
+    
+%   \resumeSubHeadingListEnd
+
+
+
+%----------- HOBBIES -----------
+
+% \section{Hobbies}
+  % \resumeSubHeadingListStart
+    % \small{\item{Swimming, Fitness, Eight-ball}}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+
+% \section{References}
+  % \resumeSubHeadingListStart
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
+
+
+% Notes for bullet points 
+% - Action verb, what it was , how we did it and result(outcome or impact)
